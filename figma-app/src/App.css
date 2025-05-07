@@ -1,0 +1,74 @@
+.Menu{
+    justify-content: space-between;
+    margin: 10px 0px 10px 10px ;
+    padding: 10px;
+    width: 100%;
+}
+.TopBar{
+display: flex;
+flex-direction: column;
+align-items: center;
+height:'150px';
+background-color:'green';
+width: 100%;
+border-bottom: 1px solid rgb(151, 148, 148);
+}
+.MainMenu{
+    padding: 3px;
+}
+.MainMenu:hover,.menuIcon:hover{
+    background-color: rgba(242, 241, 241, 0.8);
+    border-radius: 6px;
+}
+.menuIcon{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading:hover{
+    background-color:rgba(242, 241, 241, 0.8) ;
+    border-radius: 4px;
+}
+.head:hover{
+    background-color:rgb(202, 201, 201);
+    border-radius: 5px 0px 0px 5px ;
+}
+.icon:hover{
+    background-color:rgb(202, 201, 201);
+    border-radius: 0px 5px 5px 0px;
+}
+.search{
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+}
+.search:hover{
+    background-color:rgba(242, 241, 241, 0.8);
+    border-radius: 5px;
+}
+.Icons{
+    width: 15px;
+    height: 15px;
+}
+.Screen:hover{
+    background-color: rgba(242, 241, 241, 0.8);
+    border-radius: 5px;
+}
+.options:hover{
+    background-color: rgba(242, 241, 241, 0.8);
+    border-radius: 5px;
+}
+.layerOption{
+    font-size: small;
+    font-weight: 500;
+    margin: 10px 0px 15px 10px;
+    border-radius: 5px;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+}
+.layerOption:hover{
+    background-color:rgba(242, 241, 241, 0.8) ;
+}
