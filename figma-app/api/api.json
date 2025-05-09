@@ -1,0 +1,163 @@
+[
+  {
+    "city": "Delhi",
+    "hotels": [
+      {
+        "name": "The Imperial Delhi",
+        "checkIn": "2:00 PM",
+        "checkOut": "12:00 PM",
+        "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb"
+      },
+      {
+        "name": "Taj Palace",
+        "checkIn": "3:00 PM",
+        "checkOut": "11:00 AM",
+        "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+      },
+      {
+        "name": "Le Meridien",
+        "checkIn": "1:00 PM",
+        "checkOut": "11:00 AM",
+        "image": "https://images.unsplash.com/photo-1582719478128-9c0b3fd0d3fc"
+      }
+    ]
+  },
+  {
+    "city": "Mumbai",
+    "hotels": [
+      {
+        "name": "The Oberoi Mumbai",
+        "checkIn": "2:00 PM",
+        "checkOut": "12:00 PM",
+        "image": "https://images.unsplash.com/photo-1501117716987-c8e0bf07a9c1"
+      },
+      {
+        "name": "Taj Mahal Palace",
+        "checkIn": "3:00 PM",
+        "checkOut": "11:00 AM",
+        "image": "https://images.unsplash.com/photo-1560347876-aeef00ee58a1"
+      },
+      {
+        "name": "JW Marriott Juhu",
+        "checkIn": "1:00 PM",
+        "checkOut": "12:00 PM",
+        "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb"
+      }
+    ]
+  },
+  {
+    "city": "Bangalore",
+    "hotels": [
+      {
+        "name": "The Leela Palace",
+        "checkIn": "2:00 PM",
+        "checkOut": "12:00 PM",
+        "image": "https://images.unsplash.com/photo-1590490354214-804dff0d4823"
+      },
+      {
+        "name": "Taj West End",
+        "checkIn": "12:00 PM",
+        "checkOut": "11:00 AM",
+        "image": "https://images.unsplash.com/photo-1539185441755-769473a23570"
+      },
+      {
+        "name": "ITC Gardenia",
+        "checkIn": "1:00 PM",
+        "checkOut": "11:00 AM",
+        "image": "https://images.unsplash.com/photo-1582719478250-bb5c36f90204"
+      }
+    ]
+  },
+  {
+    "city": "Indore",
+    "hotels": [
+      {
+        "name": "Sayaji Hotel",
+        "checkIn": "12:00 PM",
+        "checkOut": "10:00 AM",
+        "image": "https://images.unsplash.com/photo-1629190733036-04c8f7f3aa31"
+      },
+      {
+        "name": "Radisson Blu Indore",
+        "checkIn": "2:00 PM",
+        "checkOut": "12:00 PM",
+        "image": "https://images.unsplash.com/photo-1582719478142-4e1e6f381b8e"
+      },
+      {
+        "name": "Fairfield by Marriott",
+        "checkIn": "1:00 PM",
+        "checkOut": "11:00 AM",
+        "image": "https://images.unsplash.com/photo-1576671081837-57194f7d7d66"
+      }
+    ]
+  },
+  {
+    "city": "Hyderabad",
+    "hotels": [
+      {
+        "name": "Taj Falaknuma Palace",
+        "checkIn": "2:00 PM",
+        "checkOut": "12:00 PM",
+        "image": "https://images.unsplash.com/photo-1617196034539-19b5a7f2aa67"
+      },
+      {
+        "name": "ITC Kohenur",
+        "checkIn": "3:00 PM",
+        "checkOut": "11:00 AM",
+        "image": "https://images.unsplash.com/photo-1550953891-c8410a25d5d1"
+      },
+      {
+        "name": "Park Hyatt Hyderabad",
+        "checkIn": "1:00 PM",
+        "checkOut": "11:00 AM",
+        "image": "https://images.unsplash.com/photo-1572252009280-79dfec2f2632"
+      }
+    ]
+  },
+  {
+    "city": "Jaipur",
+    "hotels": [
+      {
+        "name": "Rambagh Palace",
+        "checkIn": "2:00 PM",
+        "checkOut": "12:00 PM",
+        "image": "https://images.unsplash.com/photo-1581547848853-4dcff02a254f"
+      },
+      {
+        "name": "ITC Rajputana",
+        "checkIn": "3:00 PM",
+        "checkOut": "11:00 AM",
+        "image": "https://images.unsplash.com/photo-1590487989447-f9bf4859b745"
+      },
+      {
+        "name": "Hilton Jaipur",
+        "checkIn": "1:00 PM",
+        "checkOut": "11:00 AM",
+        "image": "https://images.unsplash.com/photo-1605731410567-c4376f389a2f"
+      }
+    ]
+  },
+  {
+    "city": "Ahmedabad",
+    "hotels": [
+      {
+        "name": "Hyatt Regency",
+        "checkIn": "2:00 PM",
+        "checkOut": "12:00 PM",
+        "image": "https://images.unsplash.com/photo-1576671081837-57194f7d7d66"
+      },
+      {
+        "name": "Courtyard by Marriott",
+        "checkIn": "3:00 PM",
+        "checkOut": "11:00 AM",
+        "image": "https://images.unsplash.com/photo-1582719478142-4e1e6f381b8e"
+      },
+      {
+        "name": "The Fern Ahmedabad",
+        "checkIn": "1:00 PM",
+        "checkOut": "11:00 AM",
+        "image": "https://images.unsplash.com/photo-1629190733036-04c8f7f3aa31"
+      }
+    ]
+  }
+]

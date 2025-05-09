@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from '../assets/City.jpeg';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import Dates from "./Dates";
 import { useLocation } from "react-router-dom";
+import {useMemberContext} from './MemberContext';
 
 
 function Dashboard(){
@@ -11,6 +12,8 @@ function Dashboard(){
    const date =location.state?.date;
    const returnDate =location.state?.returnDate;
    const upper =city.toUpperCase();
+   const {member} =useMemberContext();
+
 
     return (
         <div style={{width:'80%'}} >
@@ -36,7 +39,7 @@ function Dashboard(){
             <div style={{color:'white',marginLeft:'12px',fontSize:'12px'}}>{date}---{returnDate}</div>
          </div>
          <div className="w-100">
-          <Dates/>
+          <Dates member={member}/>
          </div>
          
         </div>

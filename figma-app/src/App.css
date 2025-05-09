@@ -43,3 +43,35 @@
 .back{
     background-image: url('./assets/Airplane.jpg');
 }
+.card{
+    width: 300px;
+    border-color: gray;
+    border-radius: 20px;
+   
+}
+/* Global styles */
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Light Mode Styles */
+  .light-mode {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  /* Dark Mode Styles */
+  .dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  /* Optional: Style for the button to toggle dark mode */
+  button {
+    padding: 10px 20px;
+    background-color: #3643fb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }

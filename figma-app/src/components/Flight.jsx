@@ -1,11 +1,19 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import Plane from '../assets/Airplane.jpg';
-function Flight (){
-   const location=useLocation();
-   const city =location.state?.city;
-   const upper =city.toUpperCase();
-   const date=location.state?.date;
+
+
+function Flight ({Usercity}){
+  const location = useLocation();
+  const destination = location.state?.city || "Unknown Destination";
+  const date = location.state?.date || "";
+
+  const userCity = Usercity && Usercity !== "Loading..." ? Usercity.toUpperCase() : "";
+  const destCity = destination.toUpperCase();
+
+  console.log("Usercity (current):", Usercity);
+  console.log("Destination (from location.state):", destination);
+
+   
 
 
 
@@ -25,7 +33,7 @@ function Flight (){
                </div>
                </div>
             <div>
-                <div style={{fontWeight:'800',color:'white',marginBottom:'5px'}}>INDIA--------->{upper}</div>
+                <div style={{fontWeight:'800',color:'white',marginBottom:'5px'}}>{userCity}---------{destCity}</div>
             </div>
             </div>
             
