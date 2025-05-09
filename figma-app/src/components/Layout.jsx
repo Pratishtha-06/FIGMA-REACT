@@ -3,9 +3,9 @@ import { ThemeContext } from '../ThemeContext'; // Import the ThemeContext
 import Dashboard from './Dashboard';
 import Flight from './Flight';
 import HotelFetch from './HotelFetch';
-import GetUserCity from './userCity';
 import MoonIcon from './MoonIcon';
 import SunIcon from './SunIcon';
+import GetUserCity from './userCity';
 
 function Layout() {
   const { isDarkMode, toggleTheme } = useContext(ThemeContext); // Access the theme context
@@ -24,12 +24,12 @@ function Layout() {
           <Dashboard />
         </div>
         <div className="row-12 row-md-12 d-flex justify-content-center">
-          <Flight/>
+          <GetUserCity/>
         </div>
         <div className="row-12 row-md-12 d-flex justify-content-center">
           <HotelFetch />
         </div>
-        
+  
       </div>
     </div>
   );

@@ -12,8 +12,7 @@ function Dashboard(){
    const date =location.state?.date;
    const returnDate =location.state?.returnDate;
    const upper =city.toUpperCase();
-   const {member} =useMemberContext();
-
+  
 
     return (
         <div style={{width:'80%'}} >
@@ -39,7 +38,7 @@ function Dashboard(){
             <div style={{color:'white',marginLeft:'12px',fontSize:'12px'}}>{date}---{returnDate}</div>
          </div>
          <div className="w-100">
-          <Dates member={member}/>
+          <Dates/>
          </div>
          
         </div>

@@ -4,6 +4,7 @@ import { differenceInCalendarDays } from "date-fns";
 import Clock from '../assets/clock.png';
 import Activity from '../assets/online-activity.png';
 import { useMemberContext } from "./MemberContext";
+import User from '../assets/user.png'
 
 
 function Dates(){
@@ -11,8 +12,9 @@ function Dates(){
   const date =location.state?.date;
   const returnDate =location.state?.returnDate;
   const Day = differenceInCalendarDays(new Date(returnDate),new Date(date));
-  const {member}=useMemberContext;
+  const {member}=useMemberContext();
 
+ 
   
     return (
         <>
@@ -29,8 +31,8 @@ function Dates(){
           <div>
               <div className="d-flex flex-row justify-content-center align-items-center"
                     style={{fontSize:'13px'}}>
-                <img src={Clock} style={{width:'15px',height:'15px',marginRight:'5px'}}/>
-                {member} Members
+                <img src={User} style={{width:'15px',height:'15px',marginRight:'5px'}}/>
+                { member>1 ? (`${member} Members`):(`${member}Member`)}
               </div>
               <div style={{textAlign:'center',fontSize:'13px'}}>Group Size</div>  
           </div>

@@ -21,6 +21,7 @@ function GetUserCity() {
             const cityName =
               components.city || components.town || components.village ||components.city_district ||
               components.state_district || "City not found";
+              console.log("city:", cityName);
               
              
             
@@ -44,7 +45,6 @@ function GetUserCity() {
     <>
        {Usercity && Usercity !== "Loading..." && Usercity !== "Failed to get city" && Usercity !== "Permission denied" && (
       <>
-      <div>UserCity:{Usercity}</div>
       <Flight Usercity={Usercity}/>
       </>
        )}

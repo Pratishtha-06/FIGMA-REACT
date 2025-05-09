@@ -53,7 +53,7 @@ function HotelFetch() {
       {filteredHotels.length > 0 && (
           filteredHotels.map((items,index)=> (
 
-      <div className="card mx-4" style={{borderRadius:'20px',minWidth:'290px'}}>
+      <div className="card mx-4" key={index} style={{borderRadius:'20px',minWidth:'290px'}}>
 
         <div className="w-100">
 
@@ -62,9 +62,9 @@ function HotelFetch() {
                style={{width:'100%',height:'100%',borderRadius:'20px 20px 0px 0px'}}/>
         </div>
         </div>
-        <div style={{margin:'10px 0px 15px 8px'}} key={index}>
-            <div style={{fontFamily:'sans-serif',fontWeight:'700',fontSize:'14px'}}>
-                Hotel name : {items.name}</div>
+        <div style={{margin:'10px 0px 15px 8px'}}>
+            <div style={{fontFamily:'sans-serif',fontWeight:'700',fontSize:'16px'}}>
+                 {items.name}</div>
             <div style={{fontFamily:'sans-serif',fontWeight:'700',fontSize:'14px'}}>
                 CheckIn:{items.checkIn}</div>
             <div style={{fontFamily:'sans-serif',fontWeight:'700',fontSize:'14px'}}>
