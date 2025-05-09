@@ -1,11 +1,13 @@
-import React, { act, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Man from '../assets/man.png';
 import Couple from '../assets/couple.png';
 import Family from '../assets/family.png';
 import Arrow from '../assets/down-arrow.png';
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import UpArrow from '../assets/arrow-up.png';
 import { useMemberContext } from "./MemberContext";
+import { differenceInCalendarDays } from "date-fns";
+
 
 function Card1(){
   const navigate =useNavigate();
@@ -15,8 +17,18 @@ function Card1(){
   const [open,setOpen]=useState(false);
   const [error,setError]=useState('');
   const { setMember } = useMemberContext();
-
   const [active,setActive]=useState('');
+
+  useEffect(() => {
+    const today = new Date();
+    const selectedDate = new Date(date);
+  
+    if (date && selectedDate < today) {
+      setError("Please select a future date");
+    }else{
+      setError("")
+    }
+  }, [date]);
     
   const handleClick=()=>{
     if(!city || !date ){
@@ -119,8 +131,12 @@ function Card1(){
                 </div>
               
                 {error && ( <div style={{color:'red' ,fontSize:'15px'}}> {error} </div>)}
-               <button onClick={handleClick}
+                {error ?( <button onClick={handleClick} disabled
+                       className="Continue">Continue</button> ):(
+                        <button onClick={handleClick}
                        className="Continue">Continue</button>
+                       )}
+               
             </div>       
          </div>
 

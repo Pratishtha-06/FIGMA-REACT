@@ -50,7 +50,7 @@ function HotelFetch() {
     <div className="py-4 d-flex flex-row" style={{overflowX:'scroll',flexWrap:'nowrap'}} >
      
     
-      {filteredHotels.length > 0 && (
+      {filteredHotels.length > 0 ? (
           filteredHotels.map((items,index)=> (
 
       <div className="card mx-4" key={index} style={{borderRadius:'20px',minWidth:'290px'}}>
@@ -75,6 +75,28 @@ function HotelFetch() {
             {days} Nights</div>
       </div>
       ))
+    ):(
+      <div className="card mx-4"  style={{borderRadius:'20px',minWidth:'290px'}}>
+
+      <div className="w-100">
+
+      <div className="backgound" style={{height:'165px',borderRadius:'20px 20px 0px 0px'}}>
+        <img   alt="hotel"
+             style={{width:'100%',height:'100%',borderRadius:'20px 20px 0px 0px'}}/>
+      </div>
+      </div>
+      <div style={{margin:'10px 0px 15px 8px'}}>
+          <div style={{fontFamily:'sans-serif',fontWeight:'700',fontSize:'16px'}}>
+               No Hotels Found</div>
+          <div style={{fontFamily:'sans-serif',fontWeight:'700',fontSize:'14px'}}>
+              CheckIn:</div>
+          <div style={{fontFamily:'sans-serif',fontWeight:'700',fontSize:'14px'}}>
+              CheckOut:</div>
+      </div>
+        
+      <div style={{fontFamily:'sans-serif',fontWeight:'700',fontSize:'14px',margin:'0px 0px 5px 8px'}}>
+          {days} Nights</div>
+    </div>
     )}
     </div>
     </div>
